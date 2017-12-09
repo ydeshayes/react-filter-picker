@@ -1,0 +1,146 @@
+.filter_dropdown > div {
+  background: #fff;
+  padding: 5px;
+  border-radius: 5px;
+  color: #000;
+  a {
+    color: rgba(0,0,0,.6);
+  }
+  a:hover {
+    color: rgba(0,0,0,1);
+  }
+}
+.filter_dropdown > div {
+  border-radius: 5px 5px 0 0;
+}
+.filter_dropdown > div.dropdown__menu {
+  border-radius: 0 0 5px 5px;
+}
+
+.dropdown__menu__input {
+  display: flex;
+
+  input + div {
+    margin-left: 10px;
+  }
+}
+
+.dropdown__menu__input__button {
+  display: flex;
+  user-select: none;
+  cursor: pointer;
+}
+
+.filter_selector {
+  display: flex;
+  align-items: center;
+  width: 70%;
+  height: 100%;
+  flex-wrap: wrap;
+  color: #414141;
+
+  &>div + div {
+    margin-left: 5px;
+  }
+}
+
+.filter_add_button {
+  display: flex;
+  align-items: center;
+  user-select: none;
+  cursor: pointer;
+  background: #eee;
+  padding: 0 5px;
+  line-height: 20px;
+  height: 20px;
+}
+
+.filter_tag {
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  font-size: 13px;
+  padding: 3px 6px;
+  border-radius: 5px;
+  text-transform: capitalize;
+  margin: 5px;
+  background-color: #fff;
+  cursor: pointer;
+
+  span + div {
+    margin-left: 10px;
+    margin-bottom: 2px;
+    font-size: .9em;
+    font-weight: bold;
+  }
+}
+
+.filter_tag__close_btn {
+  cursor: pointer;
+  user-select: none;
+  text-transform:lowercase;
+  font-size: 15px;
+  margin-left: 5px;
+}
+
+.dropdown {
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #fff;
+  user-select: none;
+  cursor: pointer;
+}
+
+.dropdown__label {
+  display: flex;
+  padding: 10px 5px;
+  text-transform: capitalize;
+  justify-content: space-between;
+  min-width: 85px;
+
+  span + span {
+    margin-left: 5px;
+  }
+}
+
+.dropdown__menu {
+  display: none;
+}
+
+.dropdown__menu--open {
+  text-transform: capitalize;
+  z-index: 20;
+  padding: 10px 5px;
+  display: block;
+  background-color: white;
+  color: rgba(0,0,0,.6);
+  user-select: none;
+  cursor: pointer;
+  min-width: 85px;
+}
+
+.dropdown__menu--open:hover {
+  color: rgba(0,0,0,1);
+}
+
+.dropdown__menu__list_item {
+  padding: 10px 5px;
+  background: transparent;
+  display: block;
+  line-height: 1em;
+  font-size: 12px;
+  color: grey;
+}
+
+.dropdown__menu__list_item:hover {
+  color: #000;
+}
+
+.dropdown__icon--open {
+  transform: rotate(180deg);
+}
+
+@media (min-width: 768px) {
+  .dropdown__menu--open {
+    position: absolute;
+  }
+}

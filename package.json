@@ -1,0 +1,51 @@
+{
+  "name": "react-filter-picker",
+  "version": "0.0.1",
+  "description": "Library boilerplate",
+  "main": "lib/react_filter_picker.min.js",
+  "scripts": {
+    "build": "webpack --env.mode=build",
+    "test": "mocha ./tests/.setup.js ./tests/**/*.spec.js",
+    "eslint": "eslint --fix ./src"
+  },
+  "devDependencies": {
+    "babel": "6.23.0",
+    "babel-cli": "^6.16.0",
+    "babel-core": "6.23.1",
+    "babel-eslint": "7.1.1",
+    "babel-loader": "6.3.2",
+    "babel-plugin-add-module-exports": "^0.2.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "chai": "^4.1.0",
+    "css-loader": "^0.28.7",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "file-loader": "^1.1.5",
+    "eslint": "3.16.1",
+    "eslint-loader": "1.6.3",
+    "eslint-plugin-react": "^7.4.0",
+    "jsdom": "^9.6.0",
+    "mocha": "^3.4.2",
+    "prop-types": "^15.6.0",
+    "react": "^16.1.1",
+    "style-loader": "^0.19.0",
+    "webpack": "^3.2.0",
+    "yargs": "^8.0.2"
+  },
+  "keywords": [
+    "react",
+    "filter",
+    "picker"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ydeshayes/react-filter-picker.git"
+  },
+  "author": "Yann Deshayes",
+  "bugs": {
+    "url": "https://github.com/ydeshayes/react-filter-picker/issues"
+  },
+  "homepage": "https://github.com/ydeshayes/react-filter-picker",
+  "license": "MIT"
+}
