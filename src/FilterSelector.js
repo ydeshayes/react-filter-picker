@@ -118,6 +118,7 @@ class FilterSelector extends React.Component {
           (filter, index) =>
             editedFilterIndex === index ? (
               <FilterDropdown
+                key={index}
                 open={isMenuOpen}
                 category={filter.category && filter.category.label}
                 currentStep={currentStep}
@@ -130,6 +131,7 @@ class FilterSelector extends React.Component {
               filter.category
               && filter.value && (
                 <div
+                  key={index}
                   className='filter_tag'
                   onClick={e => this.editTag(e, index)}
                 >
@@ -159,7 +161,7 @@ class FilterSelector extends React.Component {
 
 FilterSelector.propTypes = {
   categories: PropTypes.array,
-  values: PropTypes.array,
+  values: PropTypes.object,
   onChange: PropTypes.func
 };
 

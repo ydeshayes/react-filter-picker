@@ -51,7 +51,7 @@ FilterDropdown.propTypes = {
   onSelectCategory: PropTypes.func,
   values: PropTypes.array,
   onSelectValue: PropTypes.func,
-  currentStep: PropTypes.string,
+  currentStep: PropTypes.number,
   open: PropTypes.bool,
   category: PropTypes.string
 };
