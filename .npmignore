@@ -1,5 +1,7 @@
 src
-test
+tests
 webpack.*
 .babelrc
 .eslintrc
+stories
+.storybook
